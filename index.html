@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!-- Metadata -->
+		<title>Mitchell Goudy</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Mitchell Goudy's Personal Website" />
+		<meta name="keywords" content="Mitch,Goudy,Mitchell,Arthur,Personal,Programming,Web,Design" />
+		<meta name="author" content="Mitchell Goudy" />
+
+		<link rel="icon" type="image/png" href="res/img/favicon.ico">
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="res/js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="res/js/jquery-ui-1.9.2.custom.js"></script>
+
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+
+		<!-- Dat Style -->
+		<link rel="stylesheet" type="text/css" href="res/css/style.css">
+
+		<script type="text/javascript">
+			/* On Ready*/
+			$(document).ready(function() {
+				$('#nav a').first().addClass('selected');
+
+				$('#nav a').click(function() {
+					if(!$(this).hasClass('selected')) {
+						$('#nav a').removeClass('selected');
+						$(this).addClass('selected');
+					}
+
+					var selectionId = $(this).attr('id');
+
+					$('#content').fadeOut('medium', function() {
+						$('.page').css('display', 'none');
+						$('.page#'+selectionId).css('display', 'block');
+						$('#content').fadeIn('medium');
+					});
+				});
+			});
+		</script>
+	</head>
+
+
+	<body>
+		<div id="container">
+			<div id="header">
+		        <a id="name" >Mitchell Goudy</a>
+		        <div id="nav">
+						<a id="page1">About Me</a>
+						<a id="page2">Projects</a>
+						<a id="page3">Resume</a>
+						<a id="page4">Contact</a>
+		        </div>
+			</div>
+			<div id="content">
+		        <!-- ABOUT ME-->
+				<div class="page" id="page1" style="display:block">
+					</br>
+					<img width="232px" id="mitchPic" src="res/img/mitchPic.jpg"></img>
+					<div id = "mitchDescription">
+
+						<p class="whoAmI">I am:</p>
+
+						<ul class = "descriptionBlock">
+							<li>A Web Developer and Designer at <a href="http://www.dolphinmicro.com/" class="external">Dolphin Micro</a>.</li>
+
+							<li>22 years old, living in Boulder, Colorado.</li>
+						
+							<li>A focused Software Engineer, Web Developer, and Designer, and care deeply about what I do and how I can improve myself.</li>
+
+							<li>A programmer of Ruby (Rails), JavaScript, jQuery, C++, and Java, but my resume has my complete skill set.</li>
+
+							<li>A digital media designer in Photoshop, Gimp, and InDesign.</li>
+
+							<li>An avid reader, skier, hiker, tennis player, and video game player/creator.</li>
+						</ul>
+
+						<p class="whoAmI">I have been:</p>
+						<ul class = "descriptionBlock">
+							<li>A student of Computer Science at the University of Colorado at Boulder; I graduated May of 2013. </li>
+							<li>A student of Software Engineering at Miami University in Oxford, OH.</li>
+						</ul>
+
+						<p class="whoAmI">I want to be:</p>
+						<ul class = "descriptionBlock">
+							<li> An expert in my field, improving my technical knowledge and social skills to become the best web developer I can be.</li>
+							<li> Able to give back to a profession that has given me so much, and has the potential to do a lot of good in the world.</li>
+						</ul>
+						
+					</div>
+
+				</div>
+
+				<!-- PROJECTS-->
+				<div class="page" id="page2" style="display:none">
+					<!--Senior Project-->
+					<h2>Senior Project: MMS Visualizer</h2>
+					<img src="res/img/mms.jpg" width="50%"alt="JamWalkr" />
+					<p>For my Senior Project at CU, I was able to create a visualizer for <a href="http://www.nasa.gov/" class="external">NASA</a> and <a href="http://lasp.colorado.edu/home/" class="external">LASP</a>’s joint MMS (Magnetospheric Multiscale) mission along with my classmates <a href="http://www.nickaberle.com" class="external">Nick Aberle</a>, <a href="mailto:taylor.hall333@gmail.com" class="external">Taylor Hall</a>, <a href="http://www.yakuprising.net/teej" class="external">Theodore Hoff</a>, and <a href="http://larsendt.com" class="external">Dane Larsen</a>.</p>
+					
+					
+
+
+					<p>The visualizer is essentially a web-application made to be accessible to operations and science team members of the MMS project, as well as any space enthusiasts in the general public interested in the project.</p>
+
+					<p>The client, visualizer, and user interface is written primarily in JavaScript, notably webGL and jQuery, and is supported by a web.py python back-end in change of information grabbing, massaging, and serving to the client.</p>
+
+					<p>My role in the project was Team Lead, as well as designer of most of the user interface and some of the JavaScript client-side logic.</p>
+
+					<p><a href="http://mms-stable.larsendt.com/">Check it out!</a></p>
+
+					<!--JamWalkr-->
+					<h2>JamWalkr</h2>
+					<img src="res/img/jamwalkr.jpg" width="50%"alt="JamWalkr" />
+					<p>JamWalkr was originally a project I made with <a href="mailto:ivona.andrzejewski@gmail.com" class="external">Ivona Andrzejewski</a>, <a href="mailto:kcfikle@hotmail.com" class="external">Casey Chevalier</a>, and <a href="http://rintintin.colorado.edu/~vargasp/index.htm" class="external">Patrick Vargas</a> for our Software Engineering Methods and Tools final project. In short, it’s a web-based music streaming application, with an interesting geographic component. Users vote on the kinds of music that are popular in certain areas, and the most popular type of music in each area is used to create playlists and then streamed on demand.</p>
+
+					<p>It is written in PHP, JavaScript, jQuery, HTML, CSS, and mySQL. It also uses the Twitter Bootstrap and Google Maps API.</p>
+
+					<p>Recently, I’ve been working on making the application more mobile friendly, and even won third place in <a href="http://csuac.com/tagged/app">CU’s Mobile App Challenge</a>!</p>
+
+					<p><a href="http://jamwalkr.site11.com/">Check it out!</a></p>
+					
+				</div>
+
+				<!-- RESUME -->
+				<div class="page" id="page3" style="display:none">
+					<h2>View my resume:</h2>
+					<ul id ="resumeList"style="display: inline-block;">
+
+						<li id="localResume"><a href="res/img/resume.pdf">On this site (Updated November, 2013)</a></li>	
+
+						<li id ="googleResume"><a href="https://docs.google.com/document/d/1Kfv-BFKjc83IzVMKCHT-CfR29wGNsRvDlfXi7PkDKcs/edit?usp=sharing">At the Google Doc (Most current)</a></li>
+
+					</ul>
+				</div>
+
+				<!-- CONTACT -->
+				<div class="page" id="page4" style="display:none">
+					<ul id="socialList">
+						<center><h2>You can reach me by:</h2></center>
+						<li>
+							<a href="mailto:mitchell.a.goudy@gmail.com" class="external">
+								<img src="res/img/icons/gmail.png" alt="Mail" />
+								<strong>E-mail</strong>
+								<!-- mitchell.a.goudy@gmail.com -->
+							</a>
+						</li>
+
+						<li>
+							<a href="http://www.linkedin.com/pub/mitch-goudy/26/368/511" class="external">
+								<img src="res/img/icons/linkedin.png" alt="Linkedin" />
+								<strong>LinkedIn</strong>
+								<!-- linkedin.com/pub/mitch-goudy/26/368/511 -->
+							</a>
+						</li>
+
+						<li>
+							<a href="https://twitter.com/pancakevcr" class="external">
+								<img src="res/img/icons/twitter.png" alt="Twitter" />
+								<strong>Twitter</strong>
+								<!-- pancakevcr -->
+							</a>
+						</li>						
+
+						<li>
+							<a href="https://plus.google.com/100819664862667838805" class="external">
+								<img src="res/img/icons/googlep.png" alt="Google+" />
+								<strong>Google+</strong>
+								<!-- plus.google.com/100819664862667838805 -->
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
