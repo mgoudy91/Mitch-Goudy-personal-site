@@ -1,4 +1,10 @@
 Mitch-Goudy-personal-site
 =========================
 
-Personal Website for Mitch Goudy
+Mitchell Goudy's Personal Website
+
+by Mitch Goudy
+
+mitchellgoudy.com
+
+mgoudy91@gmail.com
