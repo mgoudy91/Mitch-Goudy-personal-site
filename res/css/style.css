@@ -102,8 +102,10 @@ p a:active {
 }
 
 .whoAmI{
-	font-size: 22px;
-	font-weight: 500;
+	font-size: 32px;
+	color: #fff;
+	text-shadow: -1px 0 #8DBDDD, 0 1px #8DBDDD, 1px 0 #8DBDDD, 0 -1px #8DBDDD;
+	letter-spacing: 1px;
 }
 
 .descriptionBlock li{
@@ -129,14 +131,45 @@ p a:active {
 #page1 p {
 	margin: 0px 0px 10px 0px;
 }
+
 /* Page 2, Projects */
-#page2{
-	text-align:center;
+#page2 h2{
+	color: #fff;
+	text-shadow: -2px 0 #8DBDDD, 0 2px #8DBDDD, 2px 0 #8DBDDD, 0 -2px #8DBDDD;
+	letter-spacing: 1px;
 }
-#page2 p {
-	text-align: justify;
+#page2 table{
+	table-layout: fixed;
+}
+.majorProj{
+	width: 100%;
+}
+.majorProj img{
+	display: inline-block;
+	width: 40%;
+	float: left;
+	padding-right: 25px;
+}
+.majorProj p {
 	text-indent:40px;
+	font-size: 17px;
 }
+.minorProj{
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+}
+.minorProj img{
+	width: 90%;
+	padding: 0 auto;
+}
+.minorProj p {
+	text-indent:30px;
+	font-size: 15px;
+	width: 90%;
+}
+
+
 
 
 /* Page 3, Resume */

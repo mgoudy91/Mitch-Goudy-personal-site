@@ -22,27 +22,8 @@
 		<!-- Dat Style -->
 		<link rel="stylesheet" type="text/css" href="res/css/style.css">
 
-		<script type="text/javascript">
-			/* On Ready*/
-			$(document).ready(function() {
-				$('#nav a').first().addClass('selected');
+		<script type="text/javascript" src="res/js/page.js"></script>
 
-				$('#nav a').click(function() {
-					if(!$(this).hasClass('selected')) {
-						$('#nav a').removeClass('selected');
-						$(this).addClass('selected');
-					}
-
-					var selectionId = $(this).attr('id');
-
-					$('#content').fadeOut('medium', function() {
-						$('.page').css('display', 'none');
-						$('.page#'+selectionId).css('display', 'block');
-						$('#content').fadeIn('medium');
-					});
-				});
-			});
-		</script>
 	</head>
 
 
@@ -52,7 +33,7 @@
 		        <a id="name" >Mitchell Goudy</a>
 		        <div id="nav">
 						<a id="page1">About Me</a>
-						<a id="page2">Projects</a>
+						<a id="page2">Code</a>
 						<a id="page3">Resume</a>
 						<a id="page4">Contact</a>
 		        </div>
@@ -83,7 +64,7 @@
 
 							<li>A Web Developer and Designer at <a href="http://www.dolphinmicro.com/" class="external">Dolphin Micro</a>.</li>
 
-							<li>A programming and software development intern at <a href="http://www.connextions.com/" class="external">Connextions</a>, <a href="https://www.efirstbank.com/" class="external">FirstBank</a>, and <a href="http://channelinsight.com/" class="external">InfoNow (now ChannelInsight)</a>.</li>
+							<li>A programming and software development intern at <a href="http://www.connextions.com/" class="external">Connextions</a>, <a href="https://www.efirstbank.com/" class="external">FirstBank</a>, and <a href="http://channelinsight.com/" class="external">InfoNow (ChannelInsight)</a>.</li>
 
 
 							<li>A student of Computer Science at the University of Colorado at Boulder; I graduated May of 2013. </li>
@@ -98,37 +79,70 @@
 						</ul>
 						
 					</div>
-
 				</div>
 
 				<!-- PROJECTS-->
 				<div class="page" id="page2" style="display:none">
 					<!--Senior Project-->
-					<h2>Senior Project: MMS Visualizer</h2>
-					<img src="res/img/mms.jpg" width="50%"alt="JamWalkr" />
-					<p>For my Senior Project at CU, I was able to create a visualizer for <a href="http://www.nasa.gov/" class="external">NASA</a> and <a href="http://lasp.colorado.edu/home/" class="external">LASP</a>’s joint MMS (Magnetospheric Multiscale) mission along with my classmates <a href="http://www.nickaberle.com" class="external">Nick Aberle</a>, <a href="mailto:taylor.hall333@gmail.com" class="external">Taylor Hall</a>, <a href="http://www.yakuprising.net/teej" class="external">Theodore Hoff</a>, and <a href="http://larsendt.com" class="external">Dane Larsen</a>.</p>
+					<table>
+						<tr> 
+							<td class = "majorProj">
+								<!--MMS-->
+								<h2>MMS Visualizer</h2>
+								<img src="res/img/mms.jpg" alt="MMS visualizer" />
+								<p>For my Senior Project at CU, I was able to create a visualizer for <a href="http://www.nasa.gov/" class="external">NASA</a> and <a href="http://lasp.colorado.edu/home/" class="external">LASP</a>’s joint MMS (Magnetospheric MultiScale) mission along with my classmates <a href="http://www.nickaberle.com" class="external">Nick Aberle</a>, <a href="mailto:taylor.hall333@gmail.com" class="external">Taylor Hall</a>, <a href="http://www.yakuprising.net/teej" class="external">Theodore Hoff</a>, and <a href="http://larsendt.com" class="external">Dane Larsen</a>.</p>
+								
+								<p>The visualizer is essentially a web-application made to be accessible to operations and science team members of the MMS project, as well as any space enthusiasts in the general public interested in the project.</p>
+
+								<p>The client, visualizer, and user interface is written primarily in JavaScript, notably webGL and jQuery, and is supported by a web.py python back-end in change of information grabbing, massaging, and serving to the client.</p>
+
+								<p>My role in the project was Team Lead, as well as designer of most of the user interface and some of the JavaScript client-side logic.</p>
+
+								<p><a href="http://mms-stable.larsendt.com/">Check it out!</a></p>
+							</td>
+						</tr>
+
+						<tr>
+							<td class = "majorProj">
+								<!--JamWalkr-->
+								<h2>JamWalkr</h2>
+								<img src="res/img/jamwalkr.jpg" alt="JamWalkr" />
+								<p>JamWalkr was originally a project I made with <a href="mailto:ivona.andrzejewski@gmail.com" class="external">Ivona Andrzejewski</a>, <a href="mailto:kcfikle@hotmail.com" class="external">Casey Chevalier</a>, and <a href="http://rintintin.colorado.edu/~vargasp/index.htm" class="external">Patrick Vargas</a> for our Software Engineering Methods and Tools final project. In short, it’s a web-based music streaming application, with an interesting geographic component. Users vote on the kinds of music that are popular in certain areas, and the most popular type of music in each area is used to create playlists and then streamed on demand.</p>
+
+								<p>It is written in PHP, JavaScript, jQuery, HTML, CSS, and mySQL. It also uses the Twitter Bootstrap and Google Maps API.</p>
+
+								<p>Recently, I’ve been working on making the application more mobile friendly, and even won third place in <a href="http://csuac.com/tagged/app">CU’s Mobile App Challenge</a>!</p>
+
+								<p><a href="http://jamwalkr.site11.com/">Check it out!</a></p>
+							</td>
+						</tr>
+						<tr>
+							<td class = "minorProj">
+								<!--Rails Photo App-->
+								<h2>Rails Photo App</h2>
+								
+								<a href="res/img/railsphoto.png" target="_blank"><img src="res/img/railsphoto.png"/></a> 
+								<p> To get practice with Ruby on Rails, I created a photo upload contest. The site features user and admin accounts, photo uploading, entry voting, and many other cool features. You can look at the source code <a href="https://github.com/mgoudy91/railsphotoapp" class="external">Here</a> </p>
+							</td>
+
+							<td class = "minorProj">
+								<!--PHP Card Demo-->
+								<h2>PHP Card Demo</h2>
+								<a href="res/img/phpcards.png" target="_blank"><img src="res/img/phpcards.png"/></a>
+								<p> As a way to refresh myself, I created a war card game simulator to go over object oriented php programming. It's fairly basic, but still fun to watch, and was good practice. The Source code is available <a href="https://github.com/mgoudy91/php_practice" class="external">Here</a></p>
+							</td>
+
+							<td class = "minorProj">
+								<!--Project Euler-->
+								<h2>Project Euler</h2>
+								<a href="res/img/euler.png" target="_blank"><img src="res/img/euler.png"/></a>
+								<p> I enjoy working on some of the problems over at <a href="https://projecteuler.net/" class="external">Project Euler</a>, which hosts a variety of mathematical/computer programming problems and challenges. You can check out some of my soultions <a href="https://github.com/mgoudy91/projecteuler" class="external">Here</a></p>
+							</td>
+
+						</tr>
+					</table>
 					
-					
 
-
-					<p>The visualizer is essentially a web-application made to be accessible to operations and science team members of the MMS project, as well as any space enthusiasts in the general public interested in the project.</p>
-
-					<p>The client, visualizer, and user interface is written primarily in JavaScript, notably webGL and jQuery, and is supported by a web.py python back-end in change of information grabbing, massaging, and serving to the client.</p>
-
-					<p>My role in the project was Team Lead, as well as designer of most of the user interface and some of the JavaScript client-side logic.</p>
-
-					<p><a href="http://mms-stable.larsendt.com/">Check it out!</a></p>
-
-					<!--JamWalkr-->
-					<h2>JamWalkr</h2>
-					<img src="res/img/jamwalkr.jpg" width="50%"alt="JamWalkr" />
-					<p>JamWalkr was originally a project I made with <a href="mailto:ivona.andrzejewski@gmail.com" class="external">Ivona Andrzejewski</a>, <a href="mailto:kcfikle@hotmail.com" class="external">Casey Chevalier</a>, and <a href="http://rintintin.colorado.edu/~vargasp/index.htm" class="external">Patrick Vargas</a> for our Software Engineering Methods and Tools final project. In short, it’s a web-based music streaming application, with an interesting geographic component. Users vote on the kinds of music that are popular in certain areas, and the most popular type of music in each area is used to create playlists and then streamed on demand.</p>
-
-					<p>It is written in PHP, JavaScript, jQuery, HTML, CSS, and mySQL. It also uses the Twitter Bootstrap and Google Maps API.</p>
-
-					<p>Recently, I’ve been working on making the application more mobile friendly, and even won third place in <a href="http://csuac.com/tagged/app">CU’s Mobile App Challenge</a>!</p>
-
-					<p><a href="http://jamwalkr.site11.com/">Check it out!</a></p>
 					
 				</div>
 
@@ -174,6 +188,7 @@
 					</ul>
 				</div>
 			</div>
+
 		</div>
 	</body>
 </html>
