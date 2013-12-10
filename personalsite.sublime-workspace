@@ -51,7 +51,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8290,
+				"buffer_size": 9275,
 				"line_ending": "Windows"
 			}
 		},
@@ -100,6 +100,10 @@
 	},
 	"file_history":
 	[
+		"/home/mitchell/Dropbox/proj_euler/solutions/prob15.rb",
+		"/home/mitchell/Dropbox/proj_euler/solutions/prob48.rb",
+		"/home/mitchell/Dropbox/proj_euler/solutions/40/count.rb",
+		"/var/www/card_demo/cards.php",
 		"/var/www/info.php",
 		"/home/mitchell/Dropbox/personal_site/res/css/style.css",
 		"/home/mitchell/Dropbox/personal_site/index.html",
@@ -167,6 +171,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"railsphoto",
+			"phpcards",
+			"res/img/railsphoto.png",
 			"2",
 			"-2",
 			"alt=\"JamWalkr\"",
@@ -246,7 +253,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -254,15 +261,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 8290,
+						"buffer_size": 9275,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6532,
-								6532
+								7988,
+								7988
 							]
 						],
 						"settings":
@@ -360,7 +367,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1771.0,
+						"translation.y": 2298.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

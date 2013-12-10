@@ -1,57 +1,55 @@
 /* General */
 body{
-	/* Gradient cross-browser*/
-	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #8DBDDD 100%);
-	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #8DBDDD 100%);
-	background-image: -o-linear-gradient(top, #FFFFFF 0%, #8DBDDD 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #8DBDDD));
-	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #8DBDDD 100%);
-	background-image: linear-gradient(to bottom, #FFFFFF 0%, #8DBDDD 100%);
-
-
+	background: url('../img/carbon.jpg') 0 0 ;
 	height: 100%;
     margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
 }
+
 h2{
 	color: #8DBDDD;
 }
 
 a{
 	text-decoration: none;
-	color:white;
+	color:#B9B9B9;
 }
 
 p a {
 	text-decoration: none;
-	color:#666666;
+	color:#B9B9B9;
 }
 p a:active {
 	text-decoration: none;
 	color:#FFFFFF;
 }
-#container{
-	width:85%;
+
+#header{
+	height: 75px;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.40);
+}
+#header_content{
+	padding: 0 0px;
+ 	width: 85%;
 	max-width: 1000px;
+ 	height: 75px;
 	margin: 0 auto;
 }
-#header{
-	padding: 0 0px;
-	height: 75px;
+
+#container{
+	width: 100%;
 }
+
 #name{
 	float: left;
 	padding: 15px 0;
 	font-family: 'Lobster', cursive;
 	color: #fff;
-	text-shadow: -2px 0 #8DBDDD, 0 2px #8DBDDD, 2px 0 #8DBDDD, 0 -2px #8DBDDD;
 	font-size:36px;
 	text-decoration: none;
 }
 #nav{
-	float: left;
+	float: right;
 	margin: 0px 20px 0 20px;
 	padding: 0px 0px 0px 20px;
 	height: 100%;
@@ -61,17 +59,17 @@ p a:active {
 #nav a{
 	cursor: pointer;
 	padding: 0px 20px 0px 0px;
-	color:black;
-	text-shadow: 1px 1px #aaa;
+	color:white;
 }
 #nav a.selected{
-	color:#8DBDDD;
+	color:#aaa;
 }
 #nav a:hover{
-	text-shadow: 0px 0px #aaa;
 }
 #content{
-	margin: 0px 0px 0px 0px;
+	width:85%;
+	max-width: 1000px;
+	margin: 0 auto;
 	font-family: 'Raleway', sans-serif;
 }
 .page{
@@ -104,7 +102,7 @@ p a:active {
 .whoAmI{
 	font-size: 32px;
 	color: #fff;
-	text-shadow: -1px 0 #8DBDDD, 0 1px #8DBDDD, 1px 0 #8DBDDD, 0 -1px #8DBDDD;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 	letter-spacing: 1px;
 }
 
@@ -117,7 +115,8 @@ p a:active {
 }
 
 .descriptionBlock li:nth-child(even){
-	background-color: #7AA9C9;
+	background-color: rgba(255, 255, 255, 0.18);
+	color: white;
 	float: right;
 	text-align: right;
 	
@@ -135,11 +134,15 @@ p a:active {
 /* Page 2, Projects */
 #page2 h2{
 	color: #fff;
-	text-shadow: -2px 0 #8DBDDD, 0 2px #8DBDDD, 2px 0 #8DBDDD, 0 -2px #8DBDDD;
-	letter-spacing: 1px;
+	/*text-shadow: -2px 0 #8DBDDD, 0 2px #8DBDDD, 2px 0 #8DBDDD, 0 -2px #8DBDDD;
+	letter-spacing: 1px;*/
 }
 #page2 table{
 	table-layout: fixed;
+	border-radius: 20px;
+	padding: 5px 15px;
+	margin-top: 10px;
+	background-color: rgba(133, 133, 133, 0.44);
 }
 .majorProj{
 	width: 100%;
@@ -151,7 +154,6 @@ p a:active {
 	padding-right: 25px;
 }
 .majorProj p {
-	text-indent:40px;
 	font-size: 17px;
 }
 .minorProj{
@@ -164,7 +166,6 @@ p a:active {
 	padding: 0 auto;
 }
 .minorProj p {
-	text-indent:30px;
 	font-size: 15px;
 	width: 90%;
 }
@@ -176,12 +177,16 @@ p a:active {
 #page3{
 	text-align:center;
 }
-#resumeLink{
+
+#page3 img{
+	padding-top: 30px;
+}
+/*#resumeLink{
 	font-family: 'lobster';
 	font-size: 50px;
 	color: #aaa;
 	text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
-}
+}*/
 
 /* Page 4, Contact */
 #socialList {
@@ -206,7 +211,7 @@ p a:active {
 
 #socialList li:nth-child(odd){
 	float: right;
-	color:#8DBDDD;	
+	color:white;	
 }
 
 #socialList li:nth-child(odd) strong{
@@ -222,8 +227,8 @@ p a:active {
 }
 #socialList li a {
     text-decoration: none;
-    color: #8DBDDD;
-    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    color: white;
+    /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;*/
 }
 #socialList li strong {
 	font-size: 50px;
