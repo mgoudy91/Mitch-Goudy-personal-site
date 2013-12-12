@@ -35,6 +35,6 @@ $(window).ready(function() {
 	}, function () {
 	    return $("#bars img:nth-child(3)").animate({top: "+="+bar_offset}, 1000);       
 	});
-
+	
 
 });

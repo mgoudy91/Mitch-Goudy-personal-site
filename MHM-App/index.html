@@ -1,0 +1,78 @@
+<html>
+	<head>
+
+        <!-- Metadata -->
+        <title>Mitch Goudy - MHM</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Mitchell Goudy's demo app for Mapleton Hill Media" />
+        <meta name="author" content="Mitchell Goudy" />
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/site.js"></script>
+
+        <!-- Style and Fonts -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+
+	</head>
+    <body>
+        <div id="container">
+            <div id="device">
+                <div id="device_content">
+                    <div id="first_row">
+                        <!-- Screen -->
+                        <div id="screen">
+                            <img id="clock_img" src="img/clock.jpg">
+                            <div id ="clock_txt">
+                                <div class="digit" id="dig_1">8</div>
+                                <div class="digit" id="dig_2">2</div>
+                                <div class="digit" id="dig_3">3</div>
+                                <div class="digit" id="dig_4">4</div>
+                            </div>
+                            <p id ="clock_unit">MIN</p>
+                        </div>
+                        <div id="button_console">
+                            <!-- Arrow buttons -->
+                            <div id="arrow_console">
+                                <button type="button" id="button_plus"><img src="img/up.jpg"></button>
+                                <button type="button" id="button_minus"><img src="img/down.jpg"></button>
+                            </div>
+                            <!-- Power button -->
+                            <div id="power_console">
+                                <button type="button" id="button_power">
+                                    <img src="img/powerled.png">
+                                    <p>PWR</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="second_row">
+
+                        <!-- On/Off FlipSwitch -->
+                        <div id ="onoffconsole">
+                            <p>MIN</p>
+                            <div class="minute-toggle">
+                                <input type="checkbox" name="minute-toggle" class="minute-toggle-checkbox" id="myminute-toggle">
+                                <label class="minute-toggle-label" for="myminute-toggle">
+                                    <div class="minute-toggle-inner"></div>
+                                    <div class="minute-toggle-switch"></div>
+                                </label>
+                            </div>
+                            <p>HRS</p>
+                        </div>
+
+                        <!-- Slider -->
+                        <div id ="slider_console">
+                            <div id="slider"></div>
+                            <img src="img/ticks.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

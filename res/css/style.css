@@ -11,7 +11,7 @@ h2{
 
 a{
 	text-decoration: none;
-	color:#B9B9B9;
+	color:white;
 }
 
 p a {
@@ -119,7 +119,10 @@ p a:active {
 	color: white;
 	float: right;
 	text-align: right;
-	
+}
+
+.descriptionBlock li:nth-child(even) a{
+	color:black;
 }
 
 .descriptionBlock li:nth-child(odd){
@@ -163,6 +166,7 @@ p a:active {
 }
 .minorProj img{
 	width: 90%;
+	height: 50%;
 	padding: 0 auto;
 }
 .minorProj p {
